@@ -1,0 +1,166 @@
+
+.backdrop{
+    position: fixed;
+    z-index: -100;
+    min-height: 100%;
+}
+
+.content-container{
+    margin: 0px auto;
+    max-width: 900px;
+    min-height: 100vh;
+    background-color: rgb(218, 218, 218, 0.2);
+    backdrop-filter: blur(5px)
+}
+
+.heading-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading-container h1{
+    letter-spacing: 2px;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.chart-generation-heading{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.chart-generation-subheading{
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 25px;
+    color: rgb(70, 70, 70);
+    font-weight: 300;
+}
+
+.heading-container h2{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(70, 70, 70);
+    max-width: 600px;
+    text-align: center;
+}
+
+.file-drop-conatiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 20px auto;
+    min-height: 500px;
+    border: 1px dashed grey;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.file-drop-conatiner p{
+    color: rgb(156, 156, 156);
+    text-align: center;
+}
+
+.graph-type-container, .graph-type-container-xy{    
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.graph-type-container{
+    grid-template-columns: 200px 1fr;
+}
+
+.graph-type-container-xy{
+    grid-template-columns: 200px 1fr 70px;
+}
+
+.legend-xy{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-self: left;
+}
+
+.legend-xy div{
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.graph-type-container img, .graph-type-container-xy img{
+    width: 150px;
+}
+
+.graph-selection-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 90%;
+    margin: 20px auto;
+    min-height: 100px;
+    background-color: rgba(223, 223, 223, 0.5);
+    border-radius: 30px;
+}
+
+.variable-select-button{
+    padding: 10px 40px;
+    margin: 10px;
+    max-height: fit-content;
+    border: 1px solid grey;
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.variable-select-button:hover, .generate-button:hover{
+    background-color: #63E6BE;
+    border-color: #63E6BE;
+}
+
+.generate-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 15px 30px;
+    border: 1px solid grey;
+    border-radius: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.graph-title-input{
+    display: block;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25px;
+    border-radius: 15px;
+    padding-left: 15px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.pie-chart-container{
+    background-color: white;
+    padding: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.clear-button{
+    display: block;
+    margin-left: auto;
+    margin-right: 40px;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.clear-button:hover{
+    background-color: rgb(255, 147, 46);
+}
